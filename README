@@ -1,4 +1,6 @@
-QtSixA is the Sixaxis Joystick Manager
+#QtSixA
+
+#QtSixA is the Sixaxis Joystick Manager
  ------------------------------------
 
 QtSixA can connect PS3 hardware (Sixaxis/DualShock3, Keypads and Remotes)
@@ -16,6 +18,6 @@ sixad also registers the hardware's MAC/ID in the device name
 
  -------------------------------------
 
-QtSixA and sixad are licensed under the GNU GPL v2 license.
+QtSixA and sixad are licensed under the GNU GPL v3 license.
 
-For help, check manual.odt/pdf, or the online help at qtsixa.sourceforge.net
+For help, check manual.odt/pdf.
