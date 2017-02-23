@@ -36,7 +36,7 @@ def func_Check_BTs(self):
         elif (BT_VER == "1.1"):
             QMessageBox.warning(self, self.tr("QtSixA - Warning"), self.tr(""
             "You're using a very old bluetooth dongle,\n"
-            "the Sixaxis will not work properly most likly"))
+            "the Sixaxis will not work properly!"))
 
 
 
@@ -902,7 +902,7 @@ class MainW(QMainWindow, ui_qtsixa_mainw.Ui_QtSixAMainW):
         else: shared.app.setQuitOnLastWindowClosed(True)
 
     def func_UpdateTrayTooltip(self):
-        self.trayTooltip = "<b> QtSixA 1.5.1 </b><br>"
+        self.trayTooltip = "<b> QtSixA 2.0.1 </b><br>"
         self.trayTooltip += "<p>"
 
         if (self.usb_number_1 == "") and (self.hidd_number_1 == ""):

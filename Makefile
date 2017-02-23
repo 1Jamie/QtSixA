@@ -3,19 +3,19 @@
 all: build
 
 build:
-	$(MAKE) -C sixad
 	$(MAKE) -C qtsixa
 	$(MAKE) -C utils
+	$(MAKE) -C sixad
 
 clean:
-	$(MAKE) clean -C sixad
 	$(MAKE) clean -C qtsixa
 	$(MAKE) clean -C utils
+	$(MAKE) clean -C sixad
 
 install:
-	$(MAKE) install -C sixad
 	$(MAKE) install -C qtsixa
 	$(MAKE) install -C utils
+	$(MAKE) install -C sixad
 
 uninstall:
 	$(MAKE) uninstall -C sixad

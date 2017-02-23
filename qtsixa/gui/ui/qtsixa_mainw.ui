@@ -22,7 +22,7 @@
       </property>
       <widget class="QWidget" name="devices">
        <attribute name="title">
-        <string>Devices :P</string>
+        <string>Devices</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_5">
         <item row="0" column="0">

@@ -422,7 +422,7 @@ class Ui_AboutW(object):
     def retranslateUi(self, AboutW):
         AboutW.setWindowTitle(_translate("AboutW", "QtSixA - About", None))
         self.label_QtSixAv.setText(_translate("AboutW", "<font size=5>QtSixA</font><br>\n"
-"<font size=4><b>version 1.5.1</b></font>", None))
+"<font size=4><b>version 2.0.1</b></font>", None))
         self.label_About.setText(_translate("AboutW", "<b>QtSixA</b> - The Sixaxis Joystick Manager<br>\n"
 "<br>\n"
 "QtSixA is written and maintained by falkTX<br>\n"

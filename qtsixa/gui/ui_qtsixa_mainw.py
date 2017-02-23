@@ -697,7 +697,7 @@ class Ui_QtSixAMainW(object):
         self.label_4.setText(_translate("QtSixAMainW", "All Devices:", None))
         self.label_5.setText(_translate("QtSixAMainW", "Sixaxis Only:", None))
         self.groupProfile.setTitle(_translate("QtSixAMainW", "Profile Properties", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.devices), _translate("QtSixAMainW", "Devices :P", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.devices), _translate("QtSixAMainW", "Devices", None))
         self.label_games.setStatusTip(_translate("QtSixAMainW", "It\'s a lazy way, you know...", None))
         self.label_games.setText(_translate("QtSixAMainW", "Instead of using a Sixaxis profile, you can edit the configuration files of a game to make it playable with a Sixaxis/DualShock3.\n"
 "The profiles in this page are meant for that.\n"

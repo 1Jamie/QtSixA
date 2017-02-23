@@ -19,7 +19,6 @@
 #include "sixaxis.h"
 #include "uinput.h"
 
-#include <unistd.h>
 #include <cstdlib>
 #include <iostream>
 #include <poll.h>
@@ -28,6 +27,7 @@
 #include <syslog.h>
 #include <time.h>
 #include <sys/socket.h>
+#include <unistd.h>
 
 int csk = 0;
 int isk = 1;
