@@ -6,7 +6,7 @@ moving it to a new PPA for ubuntu/debian current releases to make it easier for 
 
 #QtSixA
 
-#QtSixA is the Sixaxis Joystick Manager
+###QtSixA is the Sixaxis Joystick Manager
  ------------------------------------
 
 QtSixA can connect PS3 hardware (Sixaxis/DualShock3, Keypads and Remotes)
