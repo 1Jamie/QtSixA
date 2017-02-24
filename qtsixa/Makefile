@@ -20,38 +20,39 @@ clean:
 install:
 	#Make directories
 	install -d $(DESTDIR)/usr/bin/
+
 	install -d $(DESTDIR)/usr/share/applications/
 	install -d $(DESTDIR)/usr/share/pixmaps/
-# 	install -d $(DESTDIR)/usr/share/doc/qtsixa/
-# 	install -d $(DESTDIR)/usr/share/doc/qtsixa/manual/
+
 	install -d $(DESTDIR)/usr/share/qtsixa/
 	install -d $(DESTDIR)/usr/share/qtsixa/game-profiles/
 	install -d $(DESTDIR)/usr/share/qtsixa/gui/
 	install -d $(DESTDIR)/usr/share/qtsixa/icons/
 	install -d $(DESTDIR)/usr/share/qtsixa/pics/
 	install -d $(DESTDIR)/usr/share/qtsixa/profiles/
-#	install -d $(DESTDIR)/usr/share/qtsixa/lang/
+
 	#Install files
 	install -m 655 qtsixa $(DESTDIR)/usr/bin/
 	install -m 655 sixad-lq $(DESTDIR)/usr/bin/
 	install -m 655 sixad-notify $(DESTDIR)/usr/bin/
-# 	install -m 644 manual/* $(DESTDIR)/usr/share/doc/qtsixa/manual/
+
+	install -m 644 qtsixa.desktop $(DESTDIR)/usr/share/applications/
+	install -m 644 qtsixa.xpm $(DESTDIR)/usr/share/pixmaps/
+
+	install -m 644 sixad-notify.desktop $(DESTDIR)/usr/share/qtsixa/
 	install -m 644 game-profiles/* $(DESTDIR)/usr/share/qtsixa/game-profiles/
 	install -m 644 gui/*.py $(DESTDIR)/usr/share/qtsixa/gui/
 	install -m 644 icons/* $(DESTDIR)/usr/share/qtsixa/icons/
 	install -m 644 pics/* $(DESTDIR)/usr/share/qtsixa/pics/
 	install -m 644 profiles/* $(DESTDIR)/usr/share/qtsixa/profiles/
-#	install -m 644 lang/* $(DESTDIR)/usr/share/qtsixa/lang/
-	install -m 644 sixad-notify.desktop $(DESTDIR)/usr/share/qtsixa/
-	install -m 644 qtsixa.desktop $(DESTDIR)/usr/share/applications/
-	install -m 644 qtsixa.xpm $(DESTDIR)/usr/share/pixmaps/
 
 uninstall:
-	rm -rf $(DESTDIR)/usr/share/doc/qtsixa/
-	rm -rf $(DESTDIR)/usr/share/qtsixa/
+	rm -rf $(DESTDIR)/usr/bin/qtsixa
 	rm -rf $(DESTDIR)/usr/bin/sixad-lq
 	rm -rf $(DESTDIR)/usr/bin/sixad-notify
-	rm -rf $(DESTDIR)/usr/bin/qtsixa
+
 	rm -rf $(DESTDIR)/usr/share/applications/qtsixa.desktop
 	rm -rf $(DESTDIR)/usr/share/pixmaps/qtsixa.xpm
 
+	rm -rf $(DESTDIR)/usr/share/qtsixa/
+	rm -rf $(DESTDIR)/usr/share/doc/qtsixa/
